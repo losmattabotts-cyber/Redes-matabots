@@ -33,7 +33,27 @@
 			width: 120px;
 			height: 120px;
 			margin: 0 auto 18px auto;
-			background: url('https://i.imgur.com/1Q9Z1ZB.png') center/contain no-repeat; /* Cambia por tu logo */
+			background: #000;
+			border-radius: 50%;
+			box-shadow: 0 0 18px #ff6600cc, 0 0 0 6px #232323;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			overflow: hidden;
+			border: 3px solid #ff6600;
+			position: relative;
+		}
+		.logo img {
+			width: 92%;
+			height: 92%;
+			object-fit: contain;
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 2;
+			background: transparent;
 		}
 		h1 {
 			font-size: 2.2rem;
@@ -111,7 +131,7 @@
 </head>
 <body>
 	<div class="container">
-		<div class="logo"></div>
+		<div class="logo"><img src="logo mata bots.png" alt="Logo Mata Bots"></div>
 		<h1>LOS MATA BOTS</h1>
 		<div class="subtitle">REDES</div>
 		<div class="redes-list">
